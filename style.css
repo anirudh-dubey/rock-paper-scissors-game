@@ -60,3 +60,120 @@ img{
     padding: 0.5rem;
     border-radius: 1rem;
 }
+
+
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.choices {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.choice {
+    margin: 0 10px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.choice img {
+    width: 100px;
+    height: auto;
+}
+
+/* Scoreboard Styles */
+.score-board {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.score {
+    margin: 0 20px;
+    text-align: center;
+}
+
+#user-score, #comp-score {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* Message Container */
+.msg-container {
+    margin-top: 20px;
+}
+
+#msg {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .choices {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .choice {
+        margin: 10px 0;
+    }
+
+    .choice img {
+        width: 80px;
+    }
+
+    .score-board {
+        flex-direction: column;
+    }
+
+    .score {
+        margin: 10px 0;
+    }
+
+    #user-score, #comp-score {
+        font-size: 1.5rem;
+    }
+
+    #msg {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .choice img {
+        width: 60px;
+    }
+
+    h1 {
+        font-size: 1.2rem;
+    }
+
+    #user-score, #comp-score {
+        font-size: 1.2rem;
+    }
+
+    #msg {
+        font-size: 1rem;
+    }
+}
